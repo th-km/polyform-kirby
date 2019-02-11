@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*
 
 Tailwind - The Utility-First CSS Framework
@@ -46,15 +47,15 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'transparent': 'transparent',
 
-  'black': '#22292f',
+  'black': '#1e1e1e',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
-  'grey': '#b8c2cc',
+  'grey': '#6b6b6b',
   'grey-light': '#dae1e7',
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
-  'white': '#ffffff',
+  'white': '#fafafa',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',

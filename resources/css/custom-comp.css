@@ -1,0 +1,3 @@
+.typography {
+  @apply font-sans font-normal leading-normal antialiased;
+}

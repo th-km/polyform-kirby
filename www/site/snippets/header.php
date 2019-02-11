@@ -8,6 +8,6 @@
   <?= css('/assets/css/index.css') ?>
 </head>
 
-<body class="font-sans leading-normal antialiased">
+<body class="typography bg-black text-white">
 
 
