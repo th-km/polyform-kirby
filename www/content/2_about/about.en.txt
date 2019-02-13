@@ -1,0 +1,76 @@
+Title: About
+
+----
+
+Text:
+
+Polyform is a bi-scriptual type and communication design studio that designs, develops, and applies typography at all scales.
+
+We work in close collaboration with type foundries, agencies, and brands. Bringing our expertise of graphic design, type design and technology, the studio develops multicultural type and design systems.
+
+We are a small, multidisciplinary team, and our studio grows to accomplish bigger projects. We regularly collaborate with a team of experts from a wide range of specialties. Our network includes type designers, graphic designers, artists, font engineers, researchers, teachers, graphic designers, and web developers.
+
+The studio is led by Lisa Huang and Thomas Kim. We are located in Paris, France, and work internationally with connections in China.
+
+----
+
+Categories:
+
+-
+  title: Type Design
+  text: >
+    We design custom typefaces, lettering,
+    and logotypes with a special focus on
+    Latin and Chinese scripts, covering
+    languages across the Americas, Western
+    and Central Europe, and China. Our
+    approach connects the two cultures
+    through design, history, and technology.
+    Our expertise in both writing systems
+    allows for a good dialogue between the
+    two cultures, and enables us to design
+    the best solution for each project.
+  tags: >
+    Bi-Scriptual Type Design, Research,
+    Consulting, Design Adaptation
+-
+  title: Communication
+  text: >
+    We work on visual design and typographic
+    projects across a diverse range of
+    mediums, including large design systems,
+    signage, books, and interactive
+    projects. Working with multiple writing
+    systems allows us to develop global
+    communication solutions that help our
+    clients to communicate more efficiently
+    and coherently.
+  tags: >
+    Art Direction, Identities, Publications,
+    Signage
+-
+  title: Technology
+  text: >
+    We design and develop websites using the
+    best of modern technologies. The studio
+    is involved in several self-initiated
+    design projects, both to improve our
+    day-to-day workflows, and to give us the
+    chance to experiment and learn. These
+    have taken the shape of web projects,
+    typefaces, and digital tools.
+  tags: >
+    Prototyping, User Experience, Design,
+    Interactive Design, Web Development
+-
+  title: Workshops
+  text: >
+    We love to share knowledge. We are
+    available to host workshops to assist
+    students and professionals at all levels
+    in deepening their knowledge of
+    typography, type design, graphic and
+    interactive design.
+  tags: Teaching, Talks
+
+----

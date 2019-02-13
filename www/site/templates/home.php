@@ -1,12 +1,9 @@
-<?php snippet('header') ?>
+<?php
+snippet('header');
 
-<main>
-  <section>
-    <?php snippet('hero') ?>
-  </section>
+  foreach($pages->listed() as $section) {
+    snippet($section->uid(), ['data' => $section]);
+  }
 
-  <section></section>
-
-</main>
-
-<?php snippet('footer') ?>
+snippet('footer');
+?>
