@@ -3,6 +3,6 @@
 return array (
   'email' => 'info@polyform.studio',
   'language' => 'en',
-  'name' => 'polyform',
+  'name' => 'Polyform',
   'role' => 'admin',
 );

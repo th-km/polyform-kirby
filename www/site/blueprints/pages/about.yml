@@ -3,37 +3,21 @@ title: About
 icon: text
 
 columns:
-  - width: 1/1
-    sections:
-      info:
-        type: info
-        headline: Information
-        text: |
-          Don't forget to translate the content. Otherwise it will default to the default language defined in the settings page.
-
-  - width: 1/2 # Approach
+  - width: 1/2
     fields:
-      approach:
-        label: Approach
-        type: headline
-        numbered: false
-      text:
-        label: Text
+      intro:
+        label: Intro
         type: textarea
         size: large
 
-  - width: 1/2 # Services
+  - width: 1/2
     fields:
-      services:
-        label: Services
-        type: headline
-        numbered: false
       categories:
         label: Categories
         type: structure
         fields:
           title:
-            label: title
+            label: Title
             type: text
           text:
             label: Text
@@ -42,3 +26,16 @@ columns:
           tags:
             label: Tags
             tags: tags
+      email:
+        label: Email
+        type: email
+      network:
+        label: Network
+        type: structure
+        fields:
+          platform:
+            label: Platform
+            type: text
+          url:
+            label: URL
+            type: url

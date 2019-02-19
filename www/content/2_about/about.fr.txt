@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Text:
+Intro:
 
 Polyform est un studio de création graphique et typographique multilingues, qui conçoit, développe et applique la typographie à toutes échelles.
 
@@ -10,7 +10,7 @@ Nous travaillons en étroite collaboration avec des fonderies typographiques, de
 
 Nous sommes une équipe multidisciplinaire et notre studio grandit pour accomplir de plus grands projets. Nous collaborons régulièrement avec une équipe d'experts provenant d'un large éventail de spécialités. Notre réseau comprend des typographes, des graphistes, des artistes, des ingénieurs en type design, des chercheurs, des enseignants, des graphistes et des développeurs web.
 
-Le studio est dirigé par Lisa Huang et Thomas Kim. Nous sommes situés à Paris, en France, et travaillons à l'international avec des connections en Chine
+Le studio est dirigé par Lisa Huang et Thomas Kim. Nous sommes situés à Paris, en France, et travaillons à l'international avec des connections en Chine.
 
 ----
 
@@ -27,7 +27,7 @@ Categories:
     Direction Artistique, Identité
     Visuelle, Édition, Signalétique
 -
-  title: Technology
+  title: Technologie
   text: "Nous concevons et développons des sites internet utilisant le meilleur des technologies modernes. Le studio est également impliqué dans plusieurs projets de design auto-initié, à la fois pour améliorer nos méthodes de travail au quotidiens et pour nous permettre d'expérimenter et d'apprendre. Celles-ci ont pris la forme de projets digitaux, de polices de caractères et d'outils numériques."
   tags: >
     Prototypage, Design, Experience
@@ -44,3 +44,20 @@ Categories:
     typographie, en dessin de caractères,
     graphisme et design interactif.
   tags: Enseignement, Conférence
+
+----
+
+Email: info@polyform.studio
+
+----
+
+Network:
+
+-
+  platform: Instagram
+  url: >
+    https://www.instagram.com/polyform.studio/
+  account: Instagram
+
+----
+

@@ -1,0 +1,53 @@
+<section class="w-full ml-0 min-h-0 lg:w-1/2 lg:ml-half lg:min-h-full">
+  <div class="p-4 xl:p-8 xl:max-w-3xl xl:mx-auto">
+
+    <?php snippet('navigation') ?>
+
+    <div class="mt-10">
+      <h2 class="mb-6 text-grey text-fluid font-bold"><?php echo t('approach') ?></h2>
+      <?= $data->intro()->kt() ?>
+    </div>
+
+    <div class="services mt-24">
+      <h2 class="mb-6 text-grey text-fluid font-bold"><?php echo t('services') ?></h2>
+
+      <?php foreach ($data->categories()->toStructure() as $category): ?>
+        <div class="accordion border-b border-grey">
+          <div class="accordion__header overflow-hidden">
+            <h3 class="accordion__title">
+              <button class="btn w-full flex justify-between">
+                <?= $category->title()->html() ?>
+                <span class="expand text-grey">+</span>
+                <span class="collapse text-grey">-</span>
+              </button>
+            </h3>
+          </div>
+          <div class="accordion__content overflow-hidden h-0 p-0">
+            <div class="accordion__inner pb-12">
+              <?= $category->text()->kt() ?>
+              <span class="block mt-6 text-grey"><?= $category->tags() ?></span>
+            </div>
+          </div>
+        </div>
+      <?php endforeach ?>
+    </div>
+
+    <div class="mt-24">
+      <h2 class="mb-6 text-grey text-fluid font-bold"><?php echo t('contact') ?></h2>
+
+      <ul class="list-reset">
+        <li><?= Html::email($data->email()) ?></li>
+        <?php foreach ($data->network()->toStructure() as $network): ?>
+          <li><?= Html::a($network->url(), $network->platform()) ?></li>
+        <?php endforeach ?>
+      </ul>
+    </div>
+
+    <div class="mt-24">
+      <p class="mb-6 text-sm text-grey">
+         &copy; <?= date('Y') ?> <?= $site->titletag() ?>
+      </p>
+    </div>
+
+  </div>
+</section>

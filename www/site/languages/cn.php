@@ -1,9 +1,15 @@
 <?php
 
-return array (
+return [
   'code' => 'cn',
   'default' => false,
   'direction' => 'ltr',
-  'locale' => 'cn_CN',
-  'name' => 'Chinese',
-);
+  'locale' => 'zh_CN',
+  'name' => '中文',
+    'translations' => [
+    'approach' => '中文',
+    'services' => '中文',
+    'contact' => '中文'
+  ],
+  'order' => '03'
+];

@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Text:
+Intro: 
 
 Polyform is a bi-scriptual type and communication design studio that designs, develops, and applies typography at all scales.
 
@@ -14,9 +14,9 @@ The studio is led by Lisa Huang and Thomas Kim. We are located in Paris, France,
 
 ----
 
-Categories:
+Categories: 
 
--
+- 
   title: Type Design
   text: >
     We design custom typefaces, lettering,
@@ -33,7 +33,7 @@ Categories:
   tags: >
     Bi-Scriptual Type Design, Research,
     Consulting, Design Adaptation
--
+- 
   title: Communication
   text: >
     We work on visual design and typographic
@@ -48,7 +48,7 @@ Categories:
   tags: >
     Art Direction, Identities, Publications,
     Signage
--
+- 
   title: Technology
   text: >
     We design and develop websites using the
@@ -62,7 +62,7 @@ Categories:
   tags: >
     Prototyping, User Experience, Design,
     Interactive Design, Web Development
--
+- 
   title: Workshops
   text: >
     We love to share knowledge. We are
@@ -74,3 +74,18 @@ Categories:
   tags: Teaching, Talks
 
 ----
+
+Email: info@polyform.studio
+
+----
+
+Network: 
+
+- 
+  platform: Instagram
+  url: >
+    https://www.instagram.com/polyform.studio/
+  account: Instagram
+- 
+  platform: Are.na
+  url: https://www.are.na/polyform.studio

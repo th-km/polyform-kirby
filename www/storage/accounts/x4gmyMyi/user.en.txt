@@ -1,5 +1,14 @@
-Website: https://polyform.studio/
+Network: 
+
+- 
+  account: Instagram
+  url: >
+    https://www.instagram.com/polyform.studio/
 
 ----
 
-Instagram: https://www.instagram.com/polyform.studio/
+Twitter: 
+
+----
+
+Instagram: 

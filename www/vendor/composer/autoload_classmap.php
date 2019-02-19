@@ -35,6 +35,7 @@ return array(
     'Kirby\\Cms\\FileActions' => $baseDir . '/kirby/src/Cms/FileActions.php',
     'Kirby\\Cms\\FileBlueprint' => $baseDir . '/kirby/src/Cms/FileBlueprint.php',
     'Kirby\\Cms\\FileFoundation' => $baseDir . '/kirby/src/Cms/FileFoundation.php',
+    'Kirby\\Cms\\FileModifications' => $baseDir . '/kirby/src/Cms/FileModifications.php',
     'Kirby\\Cms\\FilePermissions' => $baseDir . '/kirby/src/Cms/FilePermissions.php',
     'Kirby\\Cms\\FileRules' => $baseDir . '/kirby/src/Cms/FileRules.php',
     'Kirby\\Cms\\FileVersion' => $baseDir . '/kirby/src/Cms/FileVersion.php',

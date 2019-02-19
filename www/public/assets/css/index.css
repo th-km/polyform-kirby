@@ -554,12 +554,14 @@ table {
  * override them.
  */
 
-.typography {
-  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.btn {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #fafafa;
+}
+
+.btn:focus {
+  outline: 0;
 }
 
 /**
@@ -3066,6 +3068,10 @@ table {
 
 .focus\:font-black:focus {
   font-weight: 900;
+}
+
+.h-0 {
+  height: 0px;
 }
 
 .h-1 {
@@ -6168,8 +6174,68 @@ table {
  * box with Tailwind.
  */
 
+p + p {
+  margin-top: 3rem;
+}
+
 .ml-half {
   margin-left: 50%;
+}
+
+a {
+  color: #fafafa;
+  text-decoration: none;
+  transition: color .25s ease;
+}
+
+a:hover {
+  color: #6b6b6b;
+}
+
+/* -----  Responsive typography  --------------------------------------------- */
+
+.text-fluid {
+  font-size: 20px;
+}
+
+@media (min-width: 576px) {
+  .text-fluid {
+    font-size: calc(20px + 20 * (100vw - 576px) / 1984);
+  }
+}
+
+@media (min-width: 2560px) {
+  .text-fluid {
+    font-size: 40px;
+  }
+}
+
+/* -----  Js interaction  --------------------------------------------- */
+
+/* Add transition to accordion when open */
+
+.accordion__content {
+  transition: height .25s ease-out;
+}
+
+.expand {
+  display: block;
+}
+
+.collapse {
+  display: none;
+}
+
+.js-is-open .expand {
+  display: none;
+}
+
+.js-is-open .collapse {
+  display: block;
+}
+
+.js-is-visible {
+  z-index: 10;
 }
 
 /**
@@ -8672,6 +8738,10 @@ table {
 
   .sm\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .sm\:h-0 {
+    height: 0px;
   }
 
   .sm\:h-1 {
@@ -11752,6 +11822,10 @@ table {
   .sm\:z-auto {
     z-index: auto;
   }
+
+  .sm\:ml-half {
+    margin-left: 50%;
+  }
 }
 
 @media (min-width: 768px) {
@@ -14246,6 +14320,10 @@ table {
 
   .md\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .md\:h-0 {
+    height: 0px;
   }
 
   .md\:h-1 {
@@ -17326,6 +17404,10 @@ table {
   .md\:z-auto {
     z-index: auto;
   }
+
+  .md\:ml-half {
+    margin-left: 50%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -19820,6 +19902,10 @@ table {
 
   .lg\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .lg\:h-0 {
+    height: 0px;
   }
 
   .lg\:h-1 {
@@ -22900,6 +22986,10 @@ table {
   .lg\:z-auto {
     z-index: auto;
   }
+
+  .lg\:ml-half {
+    margin-left: 50%;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -25394,6 +25484,10 @@ table {
 
   .xl\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .xl\:h-0 {
+    height: 0px;
   }
 
   .xl\:h-1 {
@@ -28474,6 +28568,10 @@ table {
   .xl\:z-auto {
     z-index: auto;
   }
+
+  .xl\:ml-half {
+    margin-left: 50%;
+  }
 }
 
 @media (min-width: 2560px) {
@@ -30968,6 +31066,10 @@ table {
 
   .xxl\:focus\:font-black:focus {
     font-weight: 900;
+  }
+
+  .xxl\:h-0 {
+    height: 0px;
   }
 
   .xxl\:h-1 {
@@ -34047,5 +34149,9 @@ table {
 
   .xxl\:z-auto {
     z-index: auto;
+  }
+
+  .xxl\:ml-half {
+    margin-left: 50%;
   }
 }

@@ -1,3 +1,62 @@
-.ml-half {
-  margin-left: 50%;
+p + p {
+  @apply mt-12;
+}
+
+@variants responsive {
+  .ml-half {
+    margin-left: 50%;
+  }
+}
+
+a {
+  @apply text-white no-underline;
+  transition: color 0.25s ease;
+
+  &:hover {
+    @apply text-grey;
+  }
+}
+
+/* -----  Responsive typography  --------------------------------------------- */
+
+.text-fluid {
+  font-size: 20px;
+}
+
+@screen sm {
+  .text-fluid {
+    font-size: calc(20px + 20 * (100vw - 576px) / 1984);
+  }
+}
+
+@screen xxl {
+  .text-fluid {
+    font-size: 40px;
+  }
+}
+
+/* -----  Js interaction  --------------------------------------------- */
+/* Add transition to accordion when open */
+.accordion__content {
+  transition: height 0.25s ease-out;
+}
+
+.expand {
+  @apply block;
+}
+
+.collapse {
+  @apply hidden;
+}
+
+.js-is-open .expand {
+  @apply hidden;
+}
+
+.js-is-open .collapse {
+  @apply block;
+}
+
+.js-is-visible {
+  @apply z-10;
 }
