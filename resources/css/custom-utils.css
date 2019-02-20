@@ -1,12 +1,3 @@
-a {
-  @apply text-white no-underline;
-  transition: color 0.25s ease;
-
-  &:hover {
-    @apply text-grey;
-  }
-}
-
 p + p {
   @apply mt-12;
 }
@@ -15,6 +6,10 @@ p + p {
   .ml-half {
     margin-left: 50%;
   }
+}
+
+.accordion__content {
+  transition: height 0.25s ease-out;
 }
 
 /* -----  Responsive typography  --------------------------------------------- */
@@ -39,28 +34,18 @@ nav .active a {
   @apply text-white;
 }
 
-/* -----  Js interaction  --------------------------------------------- */
+/* -----  Interactions  --------------------------------------------- */
 
-.accordion__content {
-  transition: height 0.25s ease-out;
-}
-
-.expand {
-  @apply block;
-}
-
-.collapse {
+/* purgecss start ignore */
+.is-open .expand {
   @apply hidden;
 }
 
-.js-is-open .expand {
-  @apply hidden;
-}
-
-.js-is-open .collapse {
+.is-open .collapse {
   @apply block;
 }
 
-.js-is-visible {
+.is-visible {
   @apply z-10;
 }
+/* purgecss end ignore */

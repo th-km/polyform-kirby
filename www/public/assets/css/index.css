@@ -572,6 +572,27 @@ table {
   outline: 0;
 }
 
+.link {
+  color: #fafafa;
+  text-decoration: none;
+  transition: color .25s ease;
+}
+
+.link:hover {
+  color: #6b6b6b;
+}
+
+.headline {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  padding-bottom: .25rem;
+  color: #6b6b6b;
+  font-size: 1.25rem;
+  font-weight: 400;
+  border-bottom-width: 1px;
+  border-color: #6b6b6b;
+}
+
 /**
  * This injects all of Tailwind's utility classes, generated based on your
  * config file.
@@ -6182,22 +6203,16 @@ table {
  * box with Tailwind.
  */
 
-a {
-  color: #fafafa;
-  text-decoration: none;
-  transition: color .25s ease;
-}
-
-a:hover {
-  color: #6b6b6b;
-}
-
 p + p {
   margin-top: 3rem;
 }
 
 .ml-half {
   margin-left: 50%;
+}
+
+.accordion__content {
+  transition: height .25s ease-out;
 }
 
 /* -----  Responsive typography  --------------------------------------------- */
@@ -6222,31 +6237,23 @@ nav .active a {
   color: #fafafa;
 }
 
-/* -----  Js interaction  --------------------------------------------- */
+/* -----  Interactions  --------------------------------------------- */
 
-.accordion__content {
-  transition: height .25s ease-out;
-}
+/* purgecss start ignore */
 
-.expand {
-  display: block;
-}
-
-.collapse {
+.is-open .expand {
   display: none;
 }
 
-.js-is-open .expand {
-  display: none;
-}
-
-.js-is-open .collapse {
+.is-open .collapse {
   display: block;
 }
 
-.js-is-visible {
+.is-visible {
   z-index: 10;
 }
+
+/* purgecss end ignore */
 
 /**
  * Use this directive to control where Tailwind injects the responsive

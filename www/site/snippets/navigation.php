@@ -19,7 +19,7 @@ foreach($orderedLanguages as $language) {
   <ul class="list-reset flex">
     <?php foreach($orderedLanguages as $language): ?>
       <li <?php e($kirby->language() == $language, ' class="active"') ?>>
-        <a class="pr-6 text-xl text-grey" href="<?= $page->url($language->code()) ?>"><?= html($language->name()) ?></a>
+        <a class="pr-6 text-xl text-grey no-underline" href="<?= $page->url($language->code()) ?>"><?= html($language->name()) ?></a>
       </li>
     <?php endforeach ?>
   </ul>

@@ -4,12 +4,12 @@
     <?php snippet('navigation') ?>
 
     <div class="mt-24">
-      <h2 class="mb-6 text-grey text-xl font-normal"><?php echo t('approach') ?></h2>
+      <h2 class="headline"><?php echo t('approach') ?></h2>
       <?= $data->intro()->kt() ?>
     </div>
 
     <div class="services mt-24">
-      <h2 class="mb-6 text-grey text-xl font-normal"><?php echo t('services') ?></h2>
+      <h2 class="headline"><?php echo t('services') ?></h2>
 
       <?php foreach ($data->categories()->toStructure() as $category): ?>
         <div class="accordion border-b border-grey">
@@ -17,8 +17,8 @@
             <h3 class="accordion__title">
               <button class="btn w-full flex justify-between">
                 <?= $category->title()->html() ?>
-                <span class="expand text-grey">+</span>
-                <span class="collapse text-grey">-</span>
+                <span class="expand block text-grey">+</span>
+                <span class="collapse hidden text-grey">-</span>
               </button>
             </h3>
           </div>
@@ -27,7 +27,7 @@
               <?= $category->text()->kt() ?>
               <ul class="mt-6 list-reset">
                 <?php foreach($category->tags()->split(',') as $tag): ?>
-                    <li class="tag text-grey"><?= $tag ?></li>
+                    <li class="text-grey"><?= $tag ?></li>
                 <?php endforeach ?>
               </ul>
             </div>
@@ -37,12 +37,12 @@
     </div>
 
     <div class="mt-24">
-      <h2 class="mb-6 text-grey text-xl font-normal"><?php echo t('contact') ?></h2>
+      <h2 class="headline"><?php echo t('contact') ?></h2>
 
       <ul class="list-reset">
-        <li><?= Html::email($data->email()) ?></li>
+        <li><?= Html::email($data->email(), null, ['class' => 'link']) ?></li>
         <?php foreach ($data->network()->toStructure() as $network): ?>
-          <li><?= Html::a($network->url(), $network->platform()) ?></li>
+          <li><?= Html::a($network->url(), $network->platform(), ['class' => 'link']) ?></li>
         <?php endforeach ?>
       </ul>
     </div>

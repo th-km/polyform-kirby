@@ -9,3 +9,16 @@
     @apply outline-none;
   }
 }
+
+.link {
+  @apply text-white no-underline;
+  transition: color 0.25s ease;
+
+  &:hover {
+    @apply text-grey;
+  }
+}
+
+.headline {
+  @apply inline-block mb-6 pb-1 text-grey text-xl font-normal border-b border-grey;
+}

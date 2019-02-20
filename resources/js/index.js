@@ -4,15 +4,13 @@ const container = document.querySelector('.services')
 
 const getHeight = (accordion, content) => {
   const inner = content.children[0]
-  const height = accordion.classList.contains('js-is-open')
-    ? 0
-    : inner.getBoundingClientRect().height
+  const height = accordion.classList.contains('is-open') ? 0 : inner.getBoundingClientRect().height
 
   return height
 }
 
 const toggleAccordion = accordion => {
-  accordion.classList.toggle('js-is-open')
+  accordion.classList.toggle('is-open')
 }
 
 const updateHeight = (element, height) => {
@@ -48,11 +46,11 @@ const loop = () => {
 
   // Remove class
   images.forEach(image => {
-    image.classList.remove('js-is-visible')
+    image.classList.remove('is-visible')
   })
 
   // Add class to the current image
-  images[currentImage].classList.add('js-is-visible')
+  images[currentImage].classList.add('is-visible')
 }
 
 // Define interval
