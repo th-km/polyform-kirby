@@ -31,9 +31,9 @@ container.addEventListener('click', e => {
   toggleAccordion(accordion)
 })
 
-// Slides
+// Gallery
 // ——————————————————
-const heroTag = document.querySelector('.hero')
+const galleryTag = document.querySelector('.gallery')
 const images = document.querySelectorAll('img')
 
 let currentImage = 0
@@ -61,20 +61,20 @@ const startLoop = () => {
 }
 
 // Stop the loop
-heroTag.addEventListener('mouseenter', () => {
+galleryTag.addEventListener('mouseenter', () => {
   startLoop()
 })
 
 // Start again
-heroTag.addEventListener('mouseleave', () => {
+galleryTag.addEventListener('mouseleave', () => {
   clearInterval(interval)
 })
 
 // Mobile touch
-heroTag.addEventListener('touchstart', () => {
+galleryTag.addEventListener('touchstart', () => {
   startLoop()
 })
 
-heroTag.addEventListener('touchend', () => {
+galleryTag.addEventListener('touchend', () => {
   clearInterval(interval)
 })

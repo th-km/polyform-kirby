@@ -10,6 +10,5 @@ return [
     'approach' => 'Approach',
     'services' => 'Services',
     'contact' => 'Contact'
-  ],
-  'order' => '01'
+  ]
 ];

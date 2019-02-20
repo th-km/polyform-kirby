@@ -6,10 +6,9 @@ return [
   'direction' => 'ltr',
   'locale' => 'fr_FR',
   'name' => 'Fr',
-    'translations' => [
+  'translations' => [
     'approach' => 'Approche',
     'services' => 'Services',
     'contact' => 'Contact'
-    ],
-    'order' => '02'
+  ]
 ];

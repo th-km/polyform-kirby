@@ -10,12 +10,12 @@
 <meta property="og:url" content="<?= $site->website() ?>">
 <meta property="og:title" content="<?= $site->title() ?>">
 <meta property="og:description" content="<?= $site->description() ?>">
-<meta property="og:image" content="<?= url('assets/images/social.png') ?>">
+<meta property="og:image" content="<?= $site->image('meta.png')->url() ?>">
 
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="<?= $site->website() ?>">
 <meta property="twitter:title" content="<?= $site->title() ?>">
 <meta property="twitter:description" content="<?= $site->description() ?>">
-<meta property="twitter:image" content="<?= url('assets/images/social.png') ?>">
+<meta property="twitter:image" content="<?= $site->image('meta.png')->url() ?>">
 
 
