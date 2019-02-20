@@ -1,3 +1,12 @@
+a {
+  @apply text-white no-underline;
+  transition: color 0.25s ease;
+
+  &:hover {
+    @apply text-grey;
+  }
+}
+
 p + p {
   @apply mt-12;
 }
@@ -5,15 +14,6 @@ p + p {
 @variants responsive {
   .ml-half {
     margin-left: 50%;
-  }
-}
-
-a {
-  @apply text-white no-underline;
-  transition: color 0.25s ease;
-
-  &:hover {
-    @apply text-grey;
   }
 }
 
@@ -35,8 +35,12 @@ a {
   }
 }
 
+nav .active a {
+  @apply text-white underline;
+}
+
 /* -----  Js interaction  --------------------------------------------- */
-/* Add transition to accordion when open */
+
 .accordion__content {
   transition: height 0.25s ease-out;
 }

@@ -3,13 +3,13 @@
 
     <?php snippet('navigation') ?>
 
-    <div class="mt-10">
-      <h2 class="mb-6 text-grey text-fluid font-bold"><?php echo t('approach') ?></h2>
+    <div class="mt-24">
+      <h2 class="mb-6 text-grey text-xl font-normal"><?php echo t('approach') ?></h2>
       <?= $data->intro()->kt() ?>
     </div>
 
     <div class="services mt-24">
-      <h2 class="mb-6 text-grey text-fluid font-bold"><?php echo t('services') ?></h2>
+      <h2 class="mb-6 text-grey text-xl font-normal"><?php echo t('services') ?></h2>
 
       <?php foreach ($data->categories()->toStructure() as $category): ?>
         <div class="accordion border-b border-grey">
@@ -25,7 +25,11 @@
           <div class="accordion__content overflow-hidden h-0 p-0">
             <div class="accordion__inner pb-12">
               <?= $category->text()->kt() ?>
-              <span class="block mt-6 text-grey"><?= $category->tags() ?></span>
+              <ul class="mt-6 list-reset">
+                <?php foreach($category->tags()->split(',') as $tag): ?>
+                    <li class="tag text-grey"><?= $tag ?></li>
+                <?php endforeach ?>
+              </ul>
             </div>
           </div>
         </div>
@@ -33,7 +37,7 @@
     </div>
 
     <div class="mt-24">
-      <h2 class="mb-6 text-grey text-fluid font-bold"><?php echo t('contact') ?></h2>
+      <h2 class="mb-6 text-grey text-xl font-normal"><?php echo t('contact') ?></h2>
 
       <ul class="list-reset">
         <li><?= Html::email($data->email()) ?></li>

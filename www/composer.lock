@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "904eae1ad1df8921b7d88e4780e86008",
+    "content-hash": "4a5911d7e617e74e6a30e65769717e0d",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -44,6 +44,37 @@
             ],
             "description": "A PHP class that makes working with images as simple as possible.",
             "time": "2017-09-12T09:03:56+00:00"
+        },
+        {
+            "name": "diverently/laravel-mix-kirby",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Diverently/laravel-mix-kirby.git",
+                "reference": "1f2fd97157821176f005fff8fe1eb8fb1841d079"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Diverently/laravel-mix-kirby/zipball/1f2fd97157821176f005fff8fe1eb8fb1841d079",
+                "reference": "1f2fd97157821176f005fff8fe1eb8fb1841d079",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Robert Cordes",
+                    "email": "robert@diverently.com"
+                }
+            ],
+            "description": "Laravel Mix helper for the Kirby CMS",
+            "time": "2019-02-20T09:35:17+00:00"
         },
         {
             "name": "filp/whoops",

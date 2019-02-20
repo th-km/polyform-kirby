@@ -2,7 +2,7 @@ Title: About
 
 ----
 
-Intro:
+Intro: 
 
 Polyform est un studio de création graphique et typographique multilingues, qui conçoit, développe et applique la typographie à toutes échelles.
 
@@ -14,26 +14,26 @@ Le studio est dirigé par Lisa Huang et Thomas Kim. Nous sommes situés à Paris
 
 ----
 
-Categories:
+Categories: 
 
--
+- 
   title: Type Design
   text: "Nous concevons des polices de caractères, des lettrages et des logotypes sur-mesure, en mettant l’accent sur les scripts latins et chinois, couvrant les langues des Amériques, de l’Europe centrale et de l’Ouest et de la Chine. Notre approche connecte les deux cultures à travers le design, l’histoire et la technologie. Notre expertise dans les deux systèmes d'écriture permet un bon dialogue entre les deux cultures et nous permet de concevoir la meilleure solution pour chaque projet."
   tags: "Design typographiques multilingue, Recherche, Consulting, Design d' Adaptation"
--
+- 
   title: Communication
   text: "Nous travaillons sur des projets de design graphique et typographique sur une grande variété  de supports, incluant des chartes graphiques, de la signalétique, conception de livres et  projets interactifs. Travailler avec plusieurs systèmes d'écriture nous permet de développer des solutions de communication globales qui aident nos clients à communiquer de manière plus efficace et cohérente."
   tags: >
     Direction Artistique, Identité
     Visuelle, Édition, Signalétique
--
+- 
   title: Technologie
   text: "Nous concevons et développons des sites internet utilisant le meilleur des technologies modernes. Le studio est également impliqué dans plusieurs projets de design auto-initié, à la fois pour améliorer nos méthodes de travail au quotidiens et pour nous permettre d'expérimenter et d'apprendre. Celles-ci ont pris la forme de projets digitaux, de polices de caractères et d'outils numériques."
   tags: >
     Prototypage, Design, Experience
     Utilisateur, Design Interactif,
     Developpement Web
--
+- 
   title: Workshops
   text: >
     Nous aimons partager nos connaissances.
@@ -51,13 +51,13 @@ Email: info@polyform.studio
 
 ----
 
-Network:
+Network: 
 
--
+- 
   platform: Instagram
   url: >
     https://www.instagram.com/polyform.studio/
   account: Instagram
-
-----
-
+- 
+  platform: Are.na
+  url: https://www.are.na/polyform.studio
