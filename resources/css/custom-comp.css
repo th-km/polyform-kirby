@@ -3,7 +3,7 @@
 }
 
 .btn {
-  @apply py-16 text-white;
+  @apply h-48 w-full text-current;
 
   &:focus {
     @apply outline-none;
@@ -11,14 +11,30 @@
 }
 
 .link {
-  @apply text-white no-underline;
-  transition: color 0.25s ease;
-
-  &:hover {
-    @apply text-grey;
-  }
+  @apply text-current no-underline;
 }
 
 .headline {
-  @apply inline-block mb-6 pb-1 text-grey text-xl font-normal border-b border-grey;
+  @apply inline-block text-xl font-normal border-b-2 border-current;
+}
+
+.indicator {
+  @apply absolute border-b-2 border-current;
+  transition: all 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.icon {
+  @apply text-4xl text-current;
+}
+
+.en {
+  @apply bg-black text-white;
+}
+
+.fr {
+  @apply bg-red-lighter text-red;
+}
+
+.cn {
+  @apply bg-teal-dark text-black;
 }

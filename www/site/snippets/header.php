@@ -8,5 +8,6 @@
   <?php echo mix('/css/index.css') ?>
 </head>
 
-<body class="typography text-fluid bg-black text-white">
+<body class="typography text-fluid <?= $kirby->language()->code() ?>">
+
 

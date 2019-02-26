@@ -1,6 +1,6 @@
 // Accordions
 // ——————————————————
-const container = document.querySelector('.services')
+const container = document.querySelector('.accordion-container')
 
 const getHeight = (accordion, content) => {
   const inner = content.children[0]
@@ -13,12 +13,12 @@ const toggleAccordion = accordion => {
   accordion.classList.toggle('is-open')
 }
 
-const updateHeight = (element, height) => {
-  element.style.height = `${height}px`
+const updateHeight = (el, height) => {
+  el.style.height = `${height}px`
 }
 
 container.addEventListener('click', e => {
-  const header = e.target.closest('.accordion__header')
+  const header = e.target.closest('.accordion-header')
   if (!header) return
 
   const accordion = header.parentElement
@@ -59,20 +59,32 @@ const startLoop = () => {
 }
 
 // Stop the loop
-galleryTag.addEventListener('mouseenter', () => {
-  startLoop()
-})
+galleryTag.addEventListener('mouseenter', startLoop)
+galleryTag.addEventListener('touchstart', startLoop)
 
 // Start again
-galleryTag.addEventListener('mouseleave', () => {
-  clearInterval(interval)
+galleryTag.addEventListener('mouseleave', () => clearInterval(interval))
+galleryTag.addEventListener('touchend', () => clearInterval(interval))
+
+// Menu
+// ——————————————————
+const nav = document.querySelector('nav')
+const lists = document.querySelectorAll('nav ul li')
+const active = document.querySelector('nav ul li.active')
+const indicator = document.querySelector('span.indicator')
+
+const getPosition = function(tag) {
+  if (tag) {
+    indicator.style.width = `${tag.offsetWidth}px`
+    indicator.style.left = `${tag.offsetLeft}px`
+  }
+}
+
+lists.forEach(list => {
+  list.addEventListener('mouseenter', function() {
+    getPosition(this)
+  })
 })
 
-// Mobile touch
-galleryTag.addEventListener('touchstart', () => {
-  startLoop()
-})
-
-galleryTag.addEventListener('touchend', () => {
-  clearInterval(interval)
-})
+nav.addEventListener('mouseleave', () => getPosition(active))
+getPosition(active)

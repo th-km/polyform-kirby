@@ -30,9 +30,7 @@ Categories:
     allows for a good dialogue between the
     two cultures, and enables us to design
     the best solution for each project.
-  tags: >
-    Bi-Scriptual Type Design, Research,
-    Consulting, Design Adaptation
+  tags: Type Design, Research, Consulting
 - 
   title: Communication
   text: >
@@ -48,20 +46,6 @@ Categories:
   tags: >
     Art Direction, Identities, Publications,
     Signage
-- 
-  title: Technology
-  text: >
-    We design and develop websites using the
-    best of modern technologies. The studio
-    is involved in several self-initiated
-    design projects, both to improve our
-    day-to-day workflows, and to give us the
-    chance to experiment and learn. These
-    have taken the shape of web projects,
-    typefaces, and digital tools.
-  tags: >
-    Prototyping, User Experience, Design,
-    Interactive Design, Web Development
 - 
   title: Workshops
   text: >
@@ -86,6 +70,3 @@ Network:
   url: >
     https://www.instagram.com/polyform.studio/
   account: Instagram
-- 
-  platform: Are.na
-  url: https://www.are.na/polyform.studio

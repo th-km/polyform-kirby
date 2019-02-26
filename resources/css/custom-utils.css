@@ -1,16 +1,52 @@
-p + p {
-  @apply mt-12;
-}
-
 @variants responsive {
-  .ml-half {
+  .ml-1\/2 {
     margin-left: 50%;
   }
 }
 
-.accordion__content {
+.active a {
+  @apply text-current;
+}
+
+.bg-current {
+  background-color: currentColor;
+}
+
+.text-current {
+  color: currentColor;
+}
+
+.border-current {
+  border-color: currentColor;
+}
+
+/* -----  Interactions  --------------------------------------------- */
+
+.accordion-content {
   transition: height 0.25s ease-out;
 }
+
+.expand {
+  @apply block;
+}
+
+.collapse {
+  @apply hidden;
+}
+
+/* purgecss start ignore */
+.is-open .expand {
+  @apply hidden;
+}
+
+.is-open .collapse {
+  @apply block;
+}
+
+.is-visible {
+  @apply z-50;
+}
+/* purgecss end ignore */
 
 /* -----  Responsive typography  --------------------------------------------- */
 
@@ -30,22 +66,20 @@ p + p {
   }
 }
 
-nav .active a {
-  @apply text-white;
+/* -----  Junk  --------------------------------------------- */
+
+p + p {
+  @apply mt-12;
 }
 
-/* -----  Interactions  --------------------------------------------- */
-
-/* purgecss start ignore */
-.is-open .expand {
-  @apply hidden;
+h2 + p {
+  @apply mt-12;
 }
 
-.is-open .collapse {
-  @apply block;
+h2 + ul {
+  @apply mt-12;
 }
 
-.is-visible {
-  @apply z-10;
+::selection {
+  @apply bg-grey;
 }
-/* purgecss end ignore */
