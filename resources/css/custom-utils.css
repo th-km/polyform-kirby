@@ -5,19 +5,82 @@
 }
 
 .active a {
-  @apply text-current;
 }
 
-.bg-current {
-  background-color: currentColor;
+.gallery img {
+  user-select: none;
+  pointer-events: none;
 }
 
-.text-current {
-  color: currentColor;
+/* -----  Theming  --------------------------------------------- */
+.en {
+  background-color: #121212;
+  color: #ffffff;
+
+  .text-secondary {
+    color: #807e7e;
+  }
+
+  .border-secondary {
+    border-color: #807e7e;
+  }
+
+  .active a {
+    color: #ffffff;
+  }
+
+  a {
+    color: #807e7e;
+  }
 }
 
-.border-current {
-  border-color: currentColor;
+.fr {
+  background-color: #30346d;
+  color: #414684;
+
+  .text-secondary {
+    color: orange;
+  }
+}
+
+.cn {
+  background-color: #bc5c43;
+  color: #f3ded8;
+
+  .text-secondary {
+    color: #d89c8d;
+  }
+}
+
+.fr .gallery img {
+  filter: brightness(0.5) sepia(1) hue-rotate(120deg) saturate(5);
+}
+
+.cn .gallery img {
+  filter: brightness(0.12);
+}
+
+/* CSS Variables Theming */
+
+.theme-en {
+  --color-bg-primary: #121212;
+  --color-text-primary: #fff;
+  --color-text-secondary: #807e7e;
+  --font-body: sans-serif;
+}
+
+.theme-fr {
+  --color-bg-primary: #ff73b3;
+  --color-text-primary: #fff;
+  --color-text-secondary: #44467b;
+  --font-body: sans-serif;
+}
+
+.theme-cn {
+  --color-bg-primary: #ff73b3;
+  --color-text-primary: #fff;
+  --color-text-secondary: #44467b;
+  --font-body: sans-serif;
 }
 
 /* -----  Interactions  --------------------------------------------- */
@@ -34,6 +97,21 @@
   @apply hidden;
 }
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+body {
+  animation: fade 1s;
+}
+
 /* purgecss start ignore */
 .is-open .expand {
   @apply hidden;
@@ -44,19 +122,19 @@
 }
 
 .is-visible {
-  @apply z-50;
+  @apply opacity-100;
 }
 /* purgecss end ignore */
 
 /* -----  Responsive typography  --------------------------------------------- */
 
 .text-fluid {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 @screen sm {
   .text-fluid {
-    font-size: calc(20px + 20 * (100vw - 576px) / 1984);
+    font-size: calc(16px + 24 * (100vw - 568px) / 872);
   }
 }
 
@@ -69,7 +147,7 @@
 /* -----  Junk  --------------------------------------------- */
 
 p + p {
-  @apply mt-12;
+  @apply mt-6;
 }
 
 h2 + p {
@@ -78,8 +156,4 @@ h2 + p {
 
 h2 + ul {
   @apply mt-12;
-}
-
-::selection {
-  @apply bg-grey;
 }

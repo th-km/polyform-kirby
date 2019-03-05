@@ -1,5 +1,5 @@
 <div class="mt-24">
-  <h2 class="headline"><?= t('contact') ?></h2>
+  <h2 class="headline text-secondary"><?= t('contact') ?></h2>
 
   <ul class="list-reset">
     <li><?= Html::email($data->email(), null, ['class' => 'link']) ?></li>
@@ -10,7 +10,7 @@
 </div>
 
 <div class="mt-24">
-  <p class="pb-12 text-sm text-current">
+  <p class="pb-12 text-sm text-secondary">
      &copy; <?= date('Y') ?> <?= $site->titletag() ?>
   </p>
 </div>

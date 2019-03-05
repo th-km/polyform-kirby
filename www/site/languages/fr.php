@@ -7,8 +7,8 @@ return [
   'locale' => 'fr_FR',
   'name' => 'Fr',
   'translations' => [
-    'approach' => 'Approche',
-    'services' => 'Services',
+    'approach' => 'Profil',
+    'services' => 'Compétences',
     'contact' => 'Contact'
   ]
 ];

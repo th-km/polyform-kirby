@@ -518,9 +518,9 @@ table {
   width: 100%;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 568px) {
   .container {
-    max-width: 576px;
+    max-width: 568px;
   }
 }
 
@@ -530,21 +530,21 @@ table {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 992px;
+    max-width: 1024px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container {
-    max-width: 1200px;
+    max-width: 1280px;
   }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 1440px) {
   .container {
-    max-width: 2560px;
+    max-width: 1440px;
   }
 }
 
@@ -556,6 +556,7 @@ table {
 
 .typography {
   font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1.875rem;
   font-weight: 400;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -563,9 +564,10 @@ table {
 }
 
 .btn {
-  height: 12rem;
   width: 100%;
-  color: currentColor;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  line-height: 2;
 }
 
 .btn:focus {
@@ -573,7 +575,6 @@ table {
 }
 
 .link {
-  color: currentColor;
   text-decoration: none;
 }
 
@@ -581,35 +582,12 @@ table {
   display: inline-block;
   font-size: 1.25rem;
   font-weight: 400;
-  border-bottom-width: 2px;
-  border-color: currentColor;
 }
 
 .indicator {
   position: absolute;
   border-bottom-width: 2px;
-  border-color: currentColor;
   transition: all .5s cubic-bezier(.45, .05, .55, .95);
-}
-
-.icon {
-  font-size: 2.25rem;
-  color: currentColor;
-}
-
-.en {
-  background-color: #1e1e1e;
-  color: #f6f6f6;
-}
-
-.fr {
-  background-color: #f9acaa;
-  color: #e3342f;
-}
-
-.cn {
-  background-color: #38a89d;
-  color: #1e1e1e;
 }
 
 /**
@@ -3022,6 +3000,10 @@ table {
   font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.font-cn {
+  font-family: STXihei, 华文细黑, Hiragino Sans GB, 冬青黑体简体中文, Microsoft YaHei New, 微软雅黑体, Microsoft YaHei, 微软雅黑, sans-serif;
+}
+
 .font-serif {
   font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
 }
@@ -3286,6 +3268,10 @@ table {
   margin: 8rem;
 }
 
+.m-64 {
+  margin: 15rem;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -3432,6 +3418,16 @@ table {
 .mx-32 {
   margin-left: 8rem;
   margin-right: 8rem;
+}
+
+.my-64 {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+}
+
+.mx-64 {
+  margin-left: 15rem;
+  margin-right: 15rem;
 }
 
 .my-auto {
@@ -3676,6 +3672,22 @@ table {
 
 .ml-32 {
   margin-left: 8rem;
+}
+
+.mt-64 {
+  margin-top: 15rem;
+}
+
+.mr-64 {
+  margin-right: 15rem;
+}
+
+.mb-64 {
+  margin-bottom: 15rem;
+}
+
+.ml-64 {
+  margin-left: 15rem;
 }
 
 .mt-auto {
@@ -6251,19 +6263,88 @@ table {
 }
 
 .active a {
-  color: currentColor;
 }
 
-.bg-current {
-  background-color: currentColor;
+.gallery img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 
-.text-current {
-  color: currentColor;
+/* -----  Theming  --------------------------------------------- */
+
+.en {
+  background-color: #121212;
+  color: #fff;
 }
 
-.border-current {
-  border-color: currentColor;
+.en .text-secondary {
+  color: #807e7e;
+}
+
+.en .border-secondary {
+  border-color: #807e7e;
+}
+
+.en .active a {
+  color: #fff;
+}
+
+.en a {
+  color: #807e7e;
+}
+
+.fr {
+  background-color: #30346d;
+  color: #414684;
+}
+
+.fr .text-secondary {
+  color: orange;
+}
+
+.cn {
+  background-color: #bc5c43;
+  color: #f3ded8;
+}
+
+.cn .text-secondary {
+  color: #d89c8d;
+}
+
+.fr .gallery img {
+  -webkit-filter: brightness(.5) sepia(1) hue-rotate(120deg) saturate(5);
+          filter: brightness(.5) sepia(1) hue-rotate(120deg) saturate(5);
+}
+
+.cn .gallery img {
+  -webkit-filter: brightness(.12);
+          filter: brightness(.12);
+}
+
+/* CSS Variables Theming */
+
+.theme-en {
+  --color-bg-primary: #121212;
+  --color-text-primary: #fff;
+  --color-text-secondary: #807e7e;
+  --font-body: sans-serif;
+}
+
+.theme-fr {
+  --color-bg-primary: #ff73b3;
+  --color-text-primary: #fff;
+  --color-text-secondary: #44467b;
+  --font-body: sans-serif;
+}
+
+.theme-cn {
+  --color-bg-primary: #ff73b3;
+  --color-text-primary: #fff;
+  --color-text-secondary: #44467b;
+  --font-body: sans-serif;
 }
 
 /* -----  Interactions  --------------------------------------------- */
@@ -6280,6 +6361,39 @@ table {
   display: none;
 }
 
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+  }
+}
+
+body {
+  -webkit-animation: fade 1s;
+          animation: fade 1s;
+}
+
 /* purgecss start ignore */
 
 .is-open .expand {
@@ -6291,7 +6405,7 @@ table {
 }
 
 .is-visible {
-  z-index: 50;
+  opacity: 1;
 }
 
 /* purgecss end ignore */
@@ -6299,16 +6413,16 @@ table {
 /* -----  Responsive typography  --------------------------------------------- */
 
 .text-fluid {
-  font-size: 20px;
+  font-size: 16px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 568px) {
   .text-fluid {
-    font-size: calc(20px + 20 * (100vw - 576px) / 1984);
+    font-size: calc(16px + 24 * (100vw - 568px) / 872);
   }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 1440px) {
   .text-fluid {
     font-size: 40px;
   }
@@ -6317,7 +6431,7 @@ table {
 /* -----  Junk  --------------------------------------------- */
 
 p + p {
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 h2 + p {
@@ -6328,34 +6442,6 @@ h2 + ul {
   margin-top: 3rem;
 }
 
-::-moz-selection {
-  background-color: #a8a8a8;
-}
-
-::selection {
-  background-color: #a8a8a8;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 /**
  * Use this directive to control where Tailwind injects the responsive
  * variations of each utility.
@@ -6364,7 +6450,7 @@ h2 + ul {
  * your stylesheet by default.
  */
 
-@media (min-width: 576px) {
+@media (min-width: 568px) {
   .sm\:list-reset {
     list-style: none;
     padding: 0;
@@ -8762,6 +8848,10 @@ h2 + ul {
     font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
+  .sm\:font-cn {
+    font-family: STXihei, 华文细黑, Hiragino Sans GB, 冬青黑体简体中文, Microsoft YaHei New, 微软雅黑体, Microsoft YaHei, 微软雅黑, sans-serif;
+  }
+
   .sm\:font-serif {
     font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
@@ -9026,6 +9116,10 @@ h2 + ul {
     margin: 8rem;
   }
 
+  .sm\:m-64 {
+    margin: 15rem;
+  }
+
   .sm\:m-auto {
     margin: auto;
   }
@@ -9172,6 +9266,16 @@ h2 + ul {
   .sm\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
+  }
+
+  .sm\:my-64 {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .sm\:mx-64 {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
   .sm\:my-auto {
@@ -9416,6 +9520,22 @@ h2 + ul {
 
   .sm\:ml-32 {
     margin-left: 8rem;
+  }
+
+  .sm\:mt-64 {
+    margin-top: 15rem;
+  }
+
+  .sm\:mr-64 {
+    margin-right: 15rem;
+  }
+
+  .sm\:mb-64 {
+    margin-bottom: 15rem;
+  }
+
+  .sm\:ml-64 {
+    margin-left: 15rem;
   }
 
   .sm\:mt-auto {
@@ -14368,6 +14488,10 @@ h2 + ul {
     font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
+  .md\:font-cn {
+    font-family: STXihei, 华文细黑, Hiragino Sans GB, 冬青黑体简体中文, Microsoft YaHei New, 微软雅黑体, Microsoft YaHei, 微软雅黑, sans-serif;
+  }
+
   .md\:font-serif {
     font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
@@ -14632,6 +14756,10 @@ h2 + ul {
     margin: 8rem;
   }
 
+  .md\:m-64 {
+    margin: 15rem;
+  }
+
   .md\:m-auto {
     margin: auto;
   }
@@ -14778,6 +14906,16 @@ h2 + ul {
   .md\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
+  }
+
+  .md\:my-64 {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .md\:mx-64 {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
   .md\:my-auto {
@@ -15022,6 +15160,22 @@ h2 + ul {
 
   .md\:ml-32 {
     margin-left: 8rem;
+  }
+
+  .md\:mt-64 {
+    margin-top: 15rem;
+  }
+
+  .md\:mr-64 {
+    margin-right: 15rem;
+  }
+
+  .md\:mb-64 {
+    margin-bottom: 15rem;
+  }
+
+  .md\:ml-64 {
+    margin-left: 15rem;
   }
 
   .md\:mt-auto {
@@ -17576,7 +17730,7 @@ h2 + ul {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .lg\:list-reset {
     list-style: none;
     padding: 0;
@@ -19974,6 +20128,10 @@ h2 + ul {
     font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
+  .lg\:font-cn {
+    font-family: STXihei, 华文细黑, Hiragino Sans GB, 冬青黑体简体中文, Microsoft YaHei New, 微软雅黑体, Microsoft YaHei, 微软雅黑, sans-serif;
+  }
+
   .lg\:font-serif {
     font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
@@ -20238,6 +20396,10 @@ h2 + ul {
     margin: 8rem;
   }
 
+  .lg\:m-64 {
+    margin: 15rem;
+  }
+
   .lg\:m-auto {
     margin: auto;
   }
@@ -20384,6 +20546,16 @@ h2 + ul {
   .lg\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
+  }
+
+  .lg\:my-64 {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .lg\:mx-64 {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
   .lg\:my-auto {
@@ -20628,6 +20800,22 @@ h2 + ul {
 
   .lg\:ml-32 {
     margin-left: 8rem;
+  }
+
+  .lg\:mt-64 {
+    margin-top: 15rem;
+  }
+
+  .lg\:mr-64 {
+    margin-right: 15rem;
+  }
+
+  .lg\:mb-64 {
+    margin-bottom: 15rem;
+  }
+
+  .lg\:ml-64 {
+    margin-left: 15rem;
   }
 
   .lg\:mt-auto {
@@ -23182,7 +23370,7 @@ h2 + ul {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .xl\:list-reset {
     list-style: none;
     padding: 0;
@@ -25580,6 +25768,10 @@ h2 + ul {
     font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
+  .xl\:font-cn {
+    font-family: STXihei, 华文细黑, Hiragino Sans GB, 冬青黑体简体中文, Microsoft YaHei New, 微软雅黑体, Microsoft YaHei, 微软雅黑, sans-serif;
+  }
+
   .xl\:font-serif {
     font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
@@ -25844,6 +26036,10 @@ h2 + ul {
     margin: 8rem;
   }
 
+  .xl\:m-64 {
+    margin: 15rem;
+  }
+
   .xl\:m-auto {
     margin: auto;
   }
@@ -25990,6 +26186,16 @@ h2 + ul {
   .xl\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
+  }
+
+  .xl\:my-64 {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .xl\:mx-64 {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
   .xl\:my-auto {
@@ -26234,6 +26440,22 @@ h2 + ul {
 
   .xl\:ml-32 {
     margin-left: 8rem;
+  }
+
+  .xl\:mt-64 {
+    margin-top: 15rem;
+  }
+
+  .xl\:mr-64 {
+    margin-right: 15rem;
+  }
+
+  .xl\:mb-64 {
+    margin-bottom: 15rem;
+  }
+
+  .xl\:ml-64 {
+    margin-left: 15rem;
   }
 
   .xl\:mt-auto {
@@ -28788,7 +29010,7 @@ h2 + ul {
   }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 1440px) {
   .xxl\:list-reset {
     list-style: none;
     padding: 0;
@@ -31186,6 +31408,10 @@ h2 + ul {
     font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
 
+  .xxl\:font-cn {
+    font-family: STXihei, 华文细黑, Hiragino Sans GB, 冬青黑体简体中文, Microsoft YaHei New, 微软雅黑体, Microsoft YaHei, 微软雅黑, sans-serif;
+  }
+
   .xxl\:font-serif {
     font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
@@ -31450,6 +31676,10 @@ h2 + ul {
     margin: 8rem;
   }
 
+  .xxl\:m-64 {
+    margin: 15rem;
+  }
+
   .xxl\:m-auto {
     margin: auto;
   }
@@ -31596,6 +31826,16 @@ h2 + ul {
   .xxl\:mx-32 {
     margin-left: 8rem;
     margin-right: 8rem;
+  }
+
+  .xxl\:my-64 {
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+  }
+
+  .xxl\:mx-64 {
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
 
   .xxl\:my-auto {
@@ -31840,6 +32080,22 @@ h2 + ul {
 
   .xxl\:ml-32 {
     margin-left: 8rem;
+  }
+
+  .xxl\:mt-64 {
+    margin-top: 15rem;
+  }
+
+  .xxl\:mr-64 {
+    margin-right: 15rem;
+  }
+
+  .xxl\:mb-64 {
+    margin-bottom: 15rem;
+  }
+
+  .xxl\:ml-64 {
+    margin-left: 15rem;
   }
 
   .xxl\:mt-auto {

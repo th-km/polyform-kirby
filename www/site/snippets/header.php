@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?= $kirby->language()->code() ?>">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,6 @@
   <?php echo mix('/css/index.css') ?>
 </head>
 
-<body class="typography text-fluid <?= $kirby->language()->code() ?>">
+<body class="typography <?= $kirby->language()->code() ?>">
 
 

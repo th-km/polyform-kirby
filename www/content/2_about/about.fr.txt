@@ -4,13 +4,13 @@ Title: About
 
 Intro: 
 
-Polyform est un studio de création graphique et typographique multilingues, qui conçoit, développe et applique la typographie à toutes échelles.
+Polyform est un studio de création graphique et typographique bi-scriptes.
 
-Nous travaillons en étroite collaboration avec des fonderies typographiques, des agences et des marques. Apportant notre expertise en conception graphique, en design typographique et en technologie, le studio développe des solutions graphique et typographique multiculturels.
+Nous collaborons avec des fonderies de caractères, des agences et des marques, en apportant notre expertise en design bilingue et biculturel.
 
-Nous sommes une équipe multidisciplinaire et notre studio grandit pour accomplir de plus grands projets. Nous collaborons régulièrement avec une équipe d'experts provenant d'un large éventail de spécialités. Notre réseau comprend des typographes, des graphistes, des artistes, des ingénieurs en type design, des chercheurs, des enseignants, des graphistes et des développeurs web.
+Notre studio peut s’adapter pour conduire des projets de diverses importances, et notre équipe pluridisciplinaire réunie un large panel de spécialistes : dessinateurs de caractères, graphistes, ingénieurs en typographie, chercheurs, enseignants et développeurs web.
 
-Le studio est dirigé par Lisa Huang et Thomas Kim. Nous sommes situés à Paris, en France, et travaillons à l'international avec des connections en Chine.
+Le studio est dirigé par Lisa Huang et Thomas Kim. Nous sommes situés à Paris, en France, et travaillons à l'international avec des connections à Shanghai, en Chine.
 
 ----
 
@@ -18,31 +18,19 @@ Categories:
 
 - 
   title: Type Design
-  text: "Nous concevons des polices de caractères, des lettrages et des logotypes sur-mesure, en mettant l’accent sur les scripts latins et chinois, couvrant les langues des Amériques, de l’Europe centrale et de l’Ouest et de la Chine. Notre approche connecte les deux cultures à travers le design, l’histoire et la technologie. Notre expertise dans les deux systèmes d'écriture permet un bon dialogue entre les deux cultures et nous permet de concevoir la meilleure solution pour chaque projet."
-  tags: "Design typographiques multilingue, Recherche, Consulting, Design d' Adaptation"
+  text: "Nous dessinons des polices de caractères sur-mesure, des lettrages et logotypes sous les systèmes d’écriture Chinoise (Chine continentale, Hong Kong et Taiwan), et Latin (Amériques, Europe de l'Ouest et Centrale). Notre approche prend en compte le design, la technologie, l’histoire et le contexte de chaque scripte afin de connecter les deux cultures et d’établir un dialogue pertinent pour chaque projet."
+  tags: Type Design, Recherche, Consulting
 - 
   title: Communication
-  text: "Nous travaillons sur des projets de design graphique et typographique sur une grande variété  de supports, incluant des chartes graphiques, de la signalétique, conception de livres et  projets interactifs. Travailler avec plusieurs systèmes d'écriture nous permet de développer des solutions de communication globales qui aident nos clients à communiquer de manière plus efficace et cohérente."
+  text: 'Nous travaillons sur divers projets graphiques : identité visuelle, signalétique, design éditorial, design interactif et développement web. Notre expertise des deux systèmes d’écriture permet de développer des solutions spécifiques pour une communication efficace et cohérente.'
   tags: >
     Direction Artistique, Identité
-    Visuelle, Édition, Signalétique
-- 
-  title: Technologie
-  text: "Nous concevons et développons des sites internet utilisant le meilleur des technologies modernes. Le studio est également impliqué dans plusieurs projets de design auto-initié, à la fois pour améliorer nos méthodes de travail au quotidiens et pour nous permettre d'expérimenter et d'apprendre. Celles-ci ont pris la forme de projets digitaux, de polices de caractères et d'outils numériques."
-  tags: >
-    Prototypage, Design, Experience
-    Utilisateur, Design Interactif,
-    Developpement Web
+    Visuelle, Édition, Typographie,
+    Signalétique, Design Interactif,
+    Développement Web
 - 
   title: Workshops
-  text: >
-    Nous aimons partager nos connaissances.
-    Nous sommes disponibles pour organiser
-    des ateliers pour aider les étudiants
-    et les professionnels de tous niveaux à
-    approfondir leurs connaissances en
-    typographie, en dessin de caractères,
-    graphisme et design interactif.
+  text: "Le studio est impliqué dans divers projets  personnels afin de laisser place à l’expérimentation, la collaboration et l’apprentissage. Nous aimons partager transmettre et apprendre à travers des workshops étudiants et professionnels curieux d'approfondir leurs connaissances."
   tags: Enseignement, Conférence
 
 ----
@@ -58,6 +46,3 @@ Network:
   url: >
     https://www.instagram.com/polyform.studio/
   account: Instagram
-- 
-  platform: Are.na
-  url: https://www.are.na/polyform.studio

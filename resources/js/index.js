@@ -1,3 +1,5 @@
+import { cpus } from 'os'
+
 // Accordions
 // ——————————————————
 const container = document.querySelector('.accordion-container')

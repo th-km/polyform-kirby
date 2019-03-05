@@ -168,11 +168,11 @@ module.exports = {
   */
 
   screens: {
-    'sm': '576px',
+    'sm': '568px',
     'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
-    'xxl': '2560px',
+    'lg': '1024px',
+    'xl': '1280px',
+    'xxl': '1440px',
   },
 
 
@@ -208,6 +208,17 @@ module.exports = {
       'Fira Sans',
       'Droid Sans',
       'Helvetica Neue',
+      'sans-serif',
+    ],
+    'cn': [
+      'STXihei',
+      '华文细黑',
+      'Hiragino Sans GB',
+      '冬青黑体简体中文',
+      'Microsoft YaHei New',
+      '微软雅黑体',
+      'Microsoft YaHei',
+      '微软雅黑',
       'sans-serif',
     ],
     'serif': [
@@ -717,6 +728,7 @@ module.exports = {
     '20': '5rem',
     '24': '6rem',
     '32': '8rem',
+    '64': '15rem',
   },
 
 
