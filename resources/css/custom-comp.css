@@ -1,7 +1,3 @@
-.typography {
-  @apply font-sans text-3xl font-normal leading-normal antialiased;
-}
-
 .btn {
   @apply w-full py-16 leading-loose;
 }
@@ -10,15 +6,19 @@
   @apply outline-none;
 }
 
-.link {
-  @apply no-underline;
-}
-
 .headline {
   @apply inline-block text-xl font-normal;
 }
 
+.expand {
+  @apply block;
+}
+
+.collapse {
+  @apply hidden;
+}
+
 .indicator {
-  @apply absolute border-b-2;
+  @apply absolute bottom-0 border-b-2;
   transition: all 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }

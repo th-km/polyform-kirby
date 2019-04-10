@@ -15,13 +15,13 @@ foreach($orderedLanguages as $language) {
 }
 ?>
 
-<nav class="relative pt-12">
-  <ul class="list-reset max-w-xs flex justify-between">
+<nav class="relative">
+  <ul class="max-w-xs flex justify-between">
     <?php foreach($orderedLanguages as $language): ?>
       <li <?php e($kirby->language() == $language, ' class="active"') ?>>
-        <a class="text-current no-underline" href="<?= $page->url($language->code()) ?>"><?= html($language->name()) ?></a>
+        <a class="link" href="<?= $page->url($language->code()) ?>"><?= html($language->name()) ?></a>
       </li>
     <?php endforeach ?>
+    <span class="indicator"></span>
   </ul>
-  <span class="indicator"></span>
 </nav>

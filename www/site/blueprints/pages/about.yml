@@ -19,6 +19,9 @@ columns:
           title:
             label: Title
             type: text
+          customslug:
+            label: Custom slug
+            type: hidden
           text:
             label: Text
             type: textarea

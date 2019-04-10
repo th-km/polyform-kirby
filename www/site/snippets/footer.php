@@ -1,3 +1,3 @@
-<?php echo mix('/js/index.js') ?>
+  <?php echo mix('/js/index.js') ?>
 </body>
 </html>

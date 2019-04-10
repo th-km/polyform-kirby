@@ -2,6 +2,7 @@
 
 namespace Kirby\Cms;
 
+use Kirby\Data\Data;
 use Kirby\Exception\DuplicateException;
 use Kirby\Exception\Exception;
 use Kirby\Exception\InvalidArgumentException;
@@ -9,10 +10,22 @@ use Kirby\Exception\LogicException;
 use Kirby\Exception\PermissionException;
 use Kirby\Toolkit\F;
 use Kirby\Toolkit\Str;
+use Throwable;
 
 /**
- * Represents a content language
- * in a multi-language setup
+ * The `$language` object represents
+ * a single language in a multi-language
+ * Kirby setup. You can, for example,
+ * use the methods of this class to get
+ * the name or locale of a language,
+ * check for the default language,
+ * get translation strings and many
+ * more things.
+ *
+ * @package   Kirby Cms
+ * @author    Bastian Allgeier <bastian@getkirby.com>
+ * @link      http://getkirby.com
+ * @copyright Bastian Allgeier
  */
 class Language extends Model
 {
@@ -145,6 +158,7 @@ class Language extends Model
     /**
      * Creates a new language object
      *
+     * @internal
      * @param array $props
      * @return self
      */
@@ -179,6 +193,7 @@ class Language extends Model
      * Delete the current language and
      * all its translation files
      *
+     * @internal
      * @return boolean
      */
     public function delete(): bool
@@ -305,7 +320,11 @@ class Language extends Model
      */
     public function pattern(): string
     {
-        return $this->url;
+        if (empty($this->url) === true) {
+            return $this->code;
+        }
+
+        return trim($this->url, '/');
     }
 
     /**
@@ -321,17 +340,32 @@ class Language extends Model
     /**
      * Saves the language settings in the languages folder
      *
+     * @internal
      * @return self
      */
     public function save(): self
     {
-        $data = $this->toArray();
+        try {
+            $existingData = Data::read($this->root());
+        } catch (Throwable $e) {
+            $existingData = [];
+        }
 
-        unset($data['url']);
+        $props = [
+            'code'         => $this->code(),
+            'default'      => $this->isDefault(),
+            'direction'    => $this->direction(),
+            'locale'       => $this->locale(),
+            'name'         => $this->name(),
+            'translations' => $this->translations(),
+            'url'          => $this->url,
+        ];
 
-        $export = '<?php' . PHP_EOL . PHP_EOL . 'return ' . var_export($data, true) . ';';
+        $data = array_merge($existingData, $props);
 
-        F::write($this->root(), $export);
+        ksort($data);
+
+        Data::write($this->root(), $data);
 
         return $this;
     }
@@ -402,7 +436,7 @@ class Language extends Model
      */
     protected function setUrl(string $url = null): self
     {
-        $this->url = $url !== null ? trim($url, '/') : $this->code;
+        $this->url = $url;
         return $this;
     }
 
@@ -441,12 +475,13 @@ class Language extends Model
      */
     public function url(): string
     {
-        return Url::to($this->url);
+        return Url::to($this->pattern());
     }
 
     /**
      * Update language properties and save them
      *
+     * @internal
      * @param array $props
      * @return self
      */

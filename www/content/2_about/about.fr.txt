@@ -4,9 +4,7 @@ Title: About
 
 Intro: 
 
-Polyform est un studio de création graphique et typographique bi-scriptes.
-
-Nous collaborons avec des fonderies de caractères, des agences et des marques, en apportant notre expertise en design bilingue et biculturel.
+Polyform est un studio de création graphique et typographique multilingue. Nous collaborons avec des fonderies de caractères, des agences et des marques.
 
 Notre studio peut s’adapter pour conduire des projets de diverses importances, et notre équipe pluridisciplinaire réunie un large panel de spécialistes : dessinateurs de caractères, graphistes, ingénieurs en typographie, chercheurs, enseignants et développeurs web.
 
@@ -18,18 +16,17 @@ Categories:
 
 - 
   title: Type Design
+  customslug: type-design
   text: "Nous dessinons des polices de caractères sur-mesure, des lettrages et logotypes sous les systèmes d’écriture Chinoise (Chine continentale, Hong Kong et Taiwan), et Latin (Amériques, Europe de l'Ouest et Centrale). Notre approche prend en compte le design, la technologie, l’histoire et le contexte de chaque scripte afin de connecter les deux cultures et d’établir un dialogue pertinent pour chaque projet."
   tags: Type Design, Recherche, Consulting
 - 
   title: Communication
-  text: 'Nous travaillons sur divers projets graphiques : identité visuelle, signalétique, design éditorial, design interactif et développement web. Notre expertise des deux systèmes d’écriture permet de développer des solutions spécifiques pour une communication efficace et cohérente.'
-  tags: >
-    Direction Artistique, Identité
-    Visuelle, Édition, Typographie,
-    Signalétique, Design Interactif,
-    Développement Web
+  customslug: communication
+  text: 'Nous travaillons sur divers projets graphiques : identité visuelle, design éditorial, design interactif et développement web. Notre expertise des deux systèmes d’écriture permet de développer des solutions spécifiques pour une communication efficace et cohérente.'
+  tags: Direction Artistique, Identité Visuelle
 - 
   title: Workshops
+  customslug: workshops
   text: "Le studio est impliqué dans divers projets  personnels afin de laisser place à l’expérimentation, la collaboration et l’apprentissage. Nous aimons partager transmettre et apprendre à travers des workshops étudiants et professionnels curieux d'approfondir leurs connaissances."
   tags: Enseignement, Conférence
 

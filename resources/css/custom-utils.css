@@ -1,115 +1,41 @@
-@variants responsive {
-  .ml-1\/2 {
-    margin-left: 50%;
-  }
-}
-
-.active a {
-}
-
 .gallery img {
-  user-select: none;
-  pointer-events: none;
+  @apply select-none pointer-events-none;
+}
+
+.accordion:first-child {
+  @apply border-t;
 }
 
 /* -----  Theming  --------------------------------------------- */
-.en {
-  background-color: #121212;
-  color: #ffffff;
 
-  .text-secondary {
-    color: #807e7e;
-  }
-
-  .border-secondary {
-    border-color: #807e7e;
-  }
-
-  .active a {
-    color: #ffffff;
-  }
-
-  a {
-    color: #807e7e;
-  }
-}
-
-.fr {
-  background-color: #30346d;
-  color: #414684;
-
-  .text-secondary {
-    color: orange;
-  }
-}
-
-.cn {
-  background-color: #bc5c43;
-  color: #f3ded8;
-
-  .text-secondary {
-    color: #d89c8d;
-  }
-}
-
-.fr .gallery img {
+/* .fr .gallery img {
   filter: brightness(0.5) sepia(1) hue-rotate(120deg) saturate(5);
-}
-
-.cn .gallery img {
-  filter: brightness(0.12);
 }
 
 /* CSS Variables Theming */
 
-.theme-en {
-  --color-bg-primary: #121212;
-  --color-text-primary: #fff;
-  --color-text-secondary: #807e7e;
-  --font-body: sans-serif;
+.en {
+  --color-default: #1c1c1c;
+  --color-primary: #f6f6f6;
+  --color-secondary: #f6f6f6;
 }
 
-.theme-fr {
-  --color-bg-primary: #ff73b3;
-  --color-text-primary: #fff;
-  --color-text-secondary: #44467b;
-  --font-body: sans-serif;
+.fr {
+  --color-default: #005cef;
+  --color-primary: #1c1c1c;
+  --color-secondary: #003286;
 }
 
-.theme-cn {
-  --color-bg-primary: #ff73b3;
-  --color-text-primary: #fff;
-  --color-text-secondary: #44467b;
-  --font-body: sans-serif;
+.cn {
+  --color-default: #a9d8bb;
+  --color-primary: #1c1c1c;
+  --color-secondary: #587262;
 }
 
 /* -----  Interactions  --------------------------------------------- */
 
 .accordion-content {
   transition: height 0.25s ease-out;
-}
-
-.expand {
-  @apply block;
-}
-
-.collapse {
-  @apply hidden;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-    transform: translateY(1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-}
-
-body {
-  animation: fade 1s;
 }
 
 /* purgecss start ignore */
@@ -134,20 +60,20 @@ body {
 
 @screen sm {
   .text-fluid {
-    font-size: calc(16px + 24 * (100vw - 568px) / 872);
+    font-size: calc(16px + 16 * (100vw - 640px) / 640);
   }
 }
 
-@screen xxl {
+@screen xl {
   .text-fluid {
-    font-size: 40px;
+    font-size: 32px;
   }
 }
 
-/* -----  Junk  --------------------------------------------- */
+/* -----  Spacing  --------------------------------------------- */
 
 p + p {
-  @apply mt-6;
+  @apply mt-8;
 }
 
 h2 + p {
