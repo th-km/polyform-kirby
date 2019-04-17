@@ -8,4 +8,4 @@
   <?php echo mix('/css/index.css') ?>
 </head>
 
-<body class="font-normal text-fluid antialiased <?= $kirby->language()->code() ?>">
+<body class="font-normal text-white bg-black antialiased <?= $kirby->language()->code() ?>">

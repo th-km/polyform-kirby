@@ -1,7 +1,5 @@
-<div class="mt-24">
-  <h2 class="headline"><?= t('contact') ?></h2>
-
-  <ul class="list-reset">
+<div class="mt-16 md:mt-40">
+  <ul>
     <li><?= Html::email($data->email(), null, ['class' => 'link']) ?></li>
     <?php foreach ($data->network()->toStructure() as $network): ?>
       <li><?= Html::a($network->url(), $network->platform(), ['class' => 'link']) ?></li>
@@ -9,8 +7,8 @@
   </ul>
 </div>
 
-<div class="mt-24">
-  <p class="pb-12 text-sm">
-     &copy; <?= date('Y') ?> <?= $site->titletag() ?>
+<div class="mt-16 md:mt-40">
+  <p class="text-xs text-gray">
+    <?= $site->copyright()->kti() ?>
   </p>
 </div>

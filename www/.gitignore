@@ -1,8 +1,0 @@
-Icon
-.DS_Store
-node_modules
-/www/public/media
-/www/storage/cache
-/www/storage/sessions
-/www/storage/accounts
-/www/vendor

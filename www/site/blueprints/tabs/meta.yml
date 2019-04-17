@@ -1,11 +1,9 @@
 label: Meta
-preset: page
-pages: false
 icon: globe
 
 fields:
-  titletag:
-    label: Title Tag
+  name:
+    label: Name
     type: text
     help: Your website’s name. While it should be a bit descriptive, try to limit it at 50 characters.
   description:
@@ -18,14 +16,7 @@ fields:
     label: Website Url
     type: url
     help: The address people will type in to get to your website.
-sidebar:
-  metaimage:
-    headline: Meta Image
-    type: files
-    layout: cards
-    image:
-      cover: true
-      ratio: 16/9
-    max: 1
-    size: small
-    info: '{{ file.dimensions }}'
+  copyright:
+    label: Copyright
+    type: text
+

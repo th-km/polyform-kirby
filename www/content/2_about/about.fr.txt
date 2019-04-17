@@ -17,7 +17,19 @@ Categories:
 - 
   title: Type Design
   customslug: type-design
-  text: "Nous dessinons des polices de caractères sur-mesure, des lettrages et logotypes sous les systèmes d’écriture Chinoise (Chine continentale, Hong Kong et Taiwan), et Latin (Amériques, Europe de l'Ouest et Centrale). Notre approche prend en compte le design, la technologie, l’histoire et le contexte de chaque scripte afin de connecter les deux cultures et d’établir un dialogue pertinent pour chaque projet."
+  text: >
+    Nous dessinons des polices de
+    caractères sur-mesure, des lettrages et
+    logotypes sous les systèmes
+    d’écriture Chinoise (Chine
+    continentale, Hong Kong et Taiwan), et
+    Latin (Amériques, Europe de l’Ouest
+    et Centrale). Notre approche prend en
+    compte le design, la technologie,
+    l’histoire et le contexte de chaque
+    scripte afin de connecter les deux
+    cultures et d’établir un dialogue
+    pertinent pour chaque projet.
   tags: Type Design, Recherche, Consulting
 - 
   title: Communication
@@ -27,7 +39,7 @@ Categories:
 - 
   title: Workshops
   customslug: workshops
-  text: "Le studio est impliqué dans divers projets  personnels afin de laisser place à l’expérimentation, la collaboration et l’apprentissage. Nous aimons partager transmettre et apprendre à travers des workshops étudiants et professionnels curieux d'approfondir leurs connaissances."
+  text: 'Le studio est impliqué dans divers projets  personnels afin de laisser place à l’expérimentation, la collaboration et l’apprentissage. Nous aimons partager transmettre et apprendre à travers des workshops étudiants et professionnels curieux d’approfondir leurs connaissances.'
   tags: Enseignement, Conférence
 
 ----

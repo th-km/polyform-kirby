@@ -47,6 +47,12 @@ const loop = () => {
   // Remove class
   images.forEach(image => {
     image.classList.remove('is-visible')
+
+    const isLast = image.classList.contains('is-last')
+
+    if (isLast) {
+      image.classList.remove('is-last')
+    }
   })
 
   // Add class to the current image
@@ -68,12 +74,12 @@ galleryTag.addEventListener('touchend', () => clearInterval(interval))
 
 // Menu
 // ——————————————————
-const nav = document.querySelector('nav')
+const nav = document.querySelector('ul')
 const lists = document.querySelectorAll('nav ul li')
 const active = document.querySelector('nav ul li.active')
 const indicator = document.querySelector('span.indicator')
 
-const getPosition = function(tag) {
+const getPosition = tag => {
   if (tag) {
     indicator.style.width = `${tag.offsetWidth}px`
     indicator.style.left = `${tag.offsetLeft}px`

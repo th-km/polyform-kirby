@@ -1,13 +1,17 @@
-Title: Polyform Studio
+Title: Polyform
 
 ----
 
-Titletag: Polyform Creative Studio
+Name: Polyform Studio
 
 ----
 
-Description: Polyform is a bi-scriptual type and communication design studio.
+Description: Polyform is a multilingual type and communication design studio.
 
 ----
 
 Website: https://polyform.studio/
+
+----
+
+Copyright: © (date: year) Polyform creative studio

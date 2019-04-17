@@ -7,7 +7,6 @@ $orderedLanguages = new Kirby\Cms\Languages();
 foreach($langOrder as $code) {
   $language = $languages->findBy('code', $code);
   $orderedLanguages->add($language);
-
 }
 
 foreach($orderedLanguages as $language) {
@@ -15,11 +14,11 @@ foreach($orderedLanguages as $language) {
 }
 ?>
 
-<nav class="relative">
-  <ul class="max-w-xs flex justify-between">
+<nav class="relative w-48 md:w-auto md:max-w-xs">
+  <ul class="flex justify-between">
     <?php foreach($orderedLanguages as $language): ?>
-      <li <?php e($kirby->language() == $language, ' class="active"') ?>>
-        <a class="link" href="<?= $page->url($language->code()) ?>"><?= html($language->name()) ?></a>
+      <li <?php e($kirby->language() == $language, 'class="active"') ?>>
+        <a href="<?= $page->url($language->code()) ?>"><?= html($language->name()) ?></a>
       </li>
     <?php endforeach ?>
     <span class="indicator"></span>

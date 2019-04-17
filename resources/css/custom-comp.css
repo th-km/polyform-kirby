@@ -1,13 +1,6 @@
-.btn {
-  @apply w-full py-16 leading-loose;
-}
-
-.btn:focus {
-  @apply outline-none;
-}
-
-.headline {
-  @apply inline-block text-xl font-normal;
+.link:hover {
+  @apply text-gray;
+  transition: color 0.25s ease;
 }
 
 .expand {
@@ -19,6 +12,7 @@
 }
 
 .indicator {
-  @apply absolute bottom-0 border-b-2;
+  @apply absolute bottom-0 -mb-1 border-b-2 border-white;
   transition: all 0.5s cubic-bezier(0.45, 0.05, 0.55, 0.95);
 }
+
