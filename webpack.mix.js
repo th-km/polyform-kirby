@@ -30,7 +30,7 @@ mix
   .postCss(`${config.inputDir}/css/index.css`, 'css', [
     atImport(),
     nested(),
-    tailwindcss('./tailwind.js')
+    tailwindcss()
   ])
 
 class TailwindExtractor {
@@ -71,7 +71,6 @@ mix.browserSync({
 })
 
 mix
-  .copyDirectory(`${config.inputDir}/images`, `${config.outputDir}/public/assets/images`)
   .copyDirectory(`${config.inputDir}/fonts`, `${config.outputDir}/public/assets/fonts`)
 
 // Full API

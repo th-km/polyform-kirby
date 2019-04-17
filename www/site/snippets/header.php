@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?= $kirby->language()->code() ?>">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title><?= $site->title() ?></title>
-  <?= css('/assets/css/index.css') ?>
+  <?php snippet('meta') ?>
+  <?php echo mix('/css/index.css') ?>
 </head>
 
-<body class="typography bg-black text-white">
-
-
+<body class="font-normal text-white bg-black antialiased <?= $kirby->language()->code() ?>">

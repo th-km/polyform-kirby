@@ -1,9 +1,9 @@
 <?php
 
-return array (
+return [
   'code' => 'cn',
   'default' => false,
   'direction' => 'ltr',
-  'locale' => 'cn_CN',
-  'name' => 'Chinese',
-);
+  'locale' => 'zh_Hans_CN',
+  'name' => '中文'
+];

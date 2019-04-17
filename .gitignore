@@ -1,3 +1,10 @@
 Icon
 .DS_Store
 node_modules
+/www/kirby
+/www/public/media
+/www/public/assets
+/www/storage/cache
+/www/storage/sessions
+/www/storage/accounts
+/www/vendor

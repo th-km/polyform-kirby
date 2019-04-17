@@ -1,0 +1,55 @@
+/* -----  Theme  --------------------------------------------- */
+
+::selection {
+  @apply bg-white text-black;
+}
+/* -----  Interactions  --------------------------------------------- */
+
+nav li:not(.active) {
+  @apply text-gray;
+}
+
+.accordion-content {
+  transition: height 0.25s ease-out;
+}
+
+/* purgecss start ignore */
+.is-open .expand {
+  @apply hidden;
+}
+
+.is-open .collapse {
+  @apply block;
+}
+
+.is-visible {
+  @apply opacity-100;
+}
+
+.is-last {
+  @apply opacity-100;
+}
+/* purgecss end ignore */
+
+/* -----  Responsive typography  --------------------------------------------- */
+
+body {
+  font-size: 16px;
+}
+
+@screen sm {
+  body {
+    font-size: calc(16px + 20 * (100vw - 640px) / 640);
+  }
+}
+
+@screen xl {
+  body {
+    font-size: 36px;
+  }
+}
+/* -----  Spacing  --------------------------------------------- */
+
+p + p {
+  @apply mt-10;
+}

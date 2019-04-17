@@ -1,3 +1,3 @@
-<?= js('/assets/js/index.js') ?>
+  <?php echo mix('/js/index.js') ?>
 </body>
 </html>

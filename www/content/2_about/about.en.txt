@@ -1,0 +1,75 @@
+Title: About
+
+----
+
+Intro: 
+
+Polyform is a  multilingual type and communication design studio. We work in close collaboration with type foundries, agencies, and brands.
+
+We are a small, multidisciplinary team, and our studio grows to accomplish bigger projects. We regularly collaborate with a team of experts from a wide range of specialties. Our network includes type designers, graphic designers, font engineers, researchers, teachers, and web developers.
+
+The studio is led by Lisa Huang and Thomas Kim. We are located in Paris, France, and work internationally with connections in Shanghai, China.
+
+----
+
+Categories: 
+
+- 
+  title: Type Design
+  customslug: type-design
+  text: >
+    We design custom typefaces, lettering,
+    and logotypes with a special focus on
+    Latin and Chinese scripts, covering
+    languages across the Americas, Western
+    and Central Europe, and China. Our
+    approach connects the two cultures
+    through design, history, and technology.
+    Our expertise in both writing systems
+    allows for a good dialogue between the
+    two cultures, and enables us to design
+    the best solution for each project.
+  tags: Type Design, Research, Consulting
+  slug: type-design
+- 
+  title: Communication
+  customslug: communication
+  text: >
+    We work on graphic design projects
+    across a diverse range of mediums,
+    including design systems, identities,
+    publications, interactive projects, and
+    web development. Working with multiple
+    writing systems allows us to develop
+    global communication solutions that help
+    our clients to communicate more
+    efficiently and coherently.
+  tags: Art Direction, Identity Design
+  slug: communication
+- 
+  title: Workshops
+  customslug: workshops
+  text: >
+    The studio is involved in several
+    self-initiated design projects, to allow
+    for experimentation, collaboration, and
+    learning. We love to share knowledge,
+    and are available to host workshops to
+    assist students and professionals at all
+    levels in deepening their knowledge.
+  tags: Teaching, Talks
+  slug: workshops
+
+----
+
+Email: info@polyform.studio
+
+----
+
+Network: 
+
+- 
+  platform: Instagram
+  url: >
+    https://www.instagram.com/polyform.studio/
+  account: Instagram

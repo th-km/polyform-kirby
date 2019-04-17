@@ -1,0 +1,44 @@
+title: About
+
+icon: text
+
+columns:
+  - width: 1/2
+    fields:
+      intro:
+        label: Intro
+        type: textarea
+        size: large
+
+  - width: 1/2
+    fields:
+      categories:
+        label: Categories
+        type: structure
+        fields:
+          title:
+            label: Title
+            type: text
+          customslug:
+            label: Custom slug
+            type: hidden
+          text:
+            label: Text
+            type: textarea
+            size: medium
+          tags:
+            label: Tags
+            tags: tags
+      email:
+        label: Email
+        type: email
+      network:
+        label: Network
+        type: structure
+        fields:
+          platform:
+            label: Platform
+            type: text
+          url:
+            label: URL
+            type: url

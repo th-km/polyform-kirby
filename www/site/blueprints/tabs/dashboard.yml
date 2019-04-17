@@ -1,0 +1,8 @@
+label: Content
+preset: pages
+icon: dashboard
+
+drafts: false
+unlisted: false
+listed:
+  headline: Pages
